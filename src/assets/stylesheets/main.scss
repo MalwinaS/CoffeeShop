@@ -1,0 +1,43 @@
+@import 'vars/index.scss';
+@import 'mixins/devices';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+
+html {
+  font-size: $font-size-base;
+  height: 100%;
+}
+
+* {
+font-family: 'Libre Baskerville', serif;
+}
+
+body {
+  background-color: $color-background-main;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  margin: 0;
+}
+
+b {
+    font-weight: $font-weight-semi-bold;
+}
+  
+i {
+    font-style: italic;
+}
+  
+ul {
+    list-style-type: none; 
+}
+  
+h1 {
+    font-size: $font-size-title;
+    font-weight: $font-weight-semi-bold;
+    line-height: $line-height-large;
+}
+  
+p {
+    font-size: $font-size-base;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-base;
+}
