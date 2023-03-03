@@ -1,6 +1,6 @@
 @import 'vars/index.scss';
 @import 'mixins/devices';
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Libre+Baskerville:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
 
 html {
   font-size: $font-size-base;
@@ -8,7 +8,7 @@ html {
 }
 
 * {
-font-family: 'Libre Baskerville', serif;
+  font-family: 'Golos Text', sans-serif;
 }
 
 body {
