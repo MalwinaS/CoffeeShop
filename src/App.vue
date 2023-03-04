@@ -3,9 +3,9 @@
     <img alt="Vue logo" src="./assets/images/header/logo.png">
   </div>
   <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">O nas</router-link> |
-    <router-link to="/store">Sklep</router-link>
+    <router-link to="/">Strona główna</router-link> |
+    <router-link to="/store">Sklep</router-link> |
+    <router-link to="/events">Wydarzenia</router-link>
   </nav>
   <router-view/>
 </template>
@@ -38,6 +38,7 @@ nav a {
   font-weight: bold;
   color: $color-primary;
   font-size: $font-size-base;
+  text-decoration: none;
 }
 
 nav a.router-link-exact-active {

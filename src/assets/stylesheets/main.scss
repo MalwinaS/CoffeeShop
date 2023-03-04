@@ -1,6 +1,6 @@
 @import 'vars/index.scss';
 @import 'mixins/devices';
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=Libre+Baskerville:ital@1&family=Open+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
 
 html {
   font-size: $font-size-base;
@@ -8,13 +8,13 @@ html {
 }
 
 * {
-  font-family: 'Golos Text', sans-serif;
+  font-family: 'Nunito', sans-serif;
+
 }
 
 body {
   background-color: $color-background-main;
   font-size: $font-size-base;
-  line-height: $line-height-base;
   margin: 0;
 }
 
@@ -41,3 +41,7 @@ p {
     font-weight: $font-weight-regular;
     line-height: $line-height-base;
 }
+
+span {
+    font-size: $font-size-small;
+}   
