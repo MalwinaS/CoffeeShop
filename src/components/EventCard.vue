@@ -11,10 +11,12 @@ import { defineProps } from 'vue';
 </script>
 
 <template>
+  <RouterLink :to="{ name: 'event-details', params: { id: event.id } }">
     <div class="event-card">
         <h3>{{ event.title }}</h3>
         <span>{{ event.time }} | {{ event.date }}</span>
     </div>
+  </RouterLink>
 </template>
 
 <style lang="scss" scoped>
