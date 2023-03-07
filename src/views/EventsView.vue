@@ -1,29 +1,19 @@
 <script setup>
+    import { ref, onMounted } from 'vue'
     import EventCard from '@/components/EventCard.vue'
-    import { ref } from 'vue'
+    import EventService from '@/services/EventService.js'
 
-    const events = ref([
-    {   
-        id: 5928101,
-        category: 'coffee',
-        title: 'Become the best barista',
-        description: 'Barista is a great occupation',
-        location: 'Coffee Store in Warsaw',
-        date: '15 czerwiec 2023',
-        time: '12:00',
-        organizer: 'Anna K.',
-    },
-    {   
-        id: 5552636,
-        category: 'coffee',
-        title: 'Become master barista',
-        description: 'Barista is a great occupation',
-        location: 'Coffee Store in Warsaw',
-        date: '30 czerwiec 2023',
-        time: '10:00',
-        organizer: 'Anna K.',
-    }
-    ])
+    const events = ref(null)
+
+    onMounted(() => {
+        EventService.getEvents()
+        .then((response) => {
+            events.value = response.data
+        })
+        .catch((error) => {
+            console.log(error)
+        })
+})
 </script>
 
 <template>
