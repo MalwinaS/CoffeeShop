@@ -1,14 +1,11 @@
 <script>
 import { ref } from 'vue';
-
 export default {
   setup() {
     const navOpen = ref(false);
-
     function toggleNavigation() {
 		navOpen.value = !navOpen.value;
     }
-
     return {
 	navOpen,
       toggleNavigation,
@@ -49,7 +46,6 @@ export default {
 </template>
 
 <style scoped lang="scss">
-
 #nav-desktop {
 nav {
   display: grid;
@@ -96,7 +92,6 @@ nav a.router-link-exact-active {
 			appearance: none;
 			cursor: pointer;
 			outline: none;
-
 			span {
 				display: block;
 				width: 20px;
@@ -128,9 +123,7 @@ nav a.router-link-exact-active {
 					transform: rotate(45deg);
 				}
 			}
-
 		}
-
 		&__menu-link {
 			list-style:none;
       		padding: 0;
@@ -153,20 +146,16 @@ nav a.router-link-exact-active {
 	}
 	display: none;
 }
-
 .translateX-enter{
 	transform:translateX(-200px);
 	opacity: 0;
 }
-
 .translateX-enter-active,.translateX-leave-active{
 	transform-origin: top left 0;
 	transition:.2s ease;
 }
-
 .translateX-leave-to{
 	transform: translateX(-200px);
 	opacity: 0;
 }
-
 </style>
