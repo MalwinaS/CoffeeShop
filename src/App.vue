@@ -1,5 +1,6 @@
 <script>
-import MenuLink from './components/MenuLink.vue'
+import MenuLink from './components/common/MenuLink.vue'
+
 export default {
   components:{
     MenuLink, 
@@ -12,13 +13,6 @@ export default {
     <img alt="Vue logo" src="./assets/images/header/logo.png">
   </div>
   <MenuLink />
-  <!-- <div class="main-menu">
-    <nav>
-      <router-link class="menu-link" to="/">Nasza palarnia</router-link>
-      <router-link class="menu-link" to="/store">Kup kawę</router-link>
-      <router-link class="menu-link" to="/contact">Kontakt</router-link>
-    </nav>
-  </div> -->
   <router-view/>
 </template>
 

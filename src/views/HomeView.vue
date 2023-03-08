@@ -1,14 +1,19 @@
+<script>
+import HeaderImage from '../components/common/HeaderImage.vue'
+
+export default {
+  components:{
+    HeaderImage, 
+  },
+}
+
+</script>
+
 <template>
   <div class="home">
-    <h1>Nasza palarnia</h1>
+    <HeaderImage />
   </div>
 </template>
-
-<script>
-  export default {
-    name: 'HomeView',
-  }
-</script>
 
 <style lang="scss" scoped>
 

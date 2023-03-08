@@ -1,11 +1,17 @@
-<script setup>
- 
+<script>
+ import HeaderImage from '../components/common/HeaderImage.vue'
+
+export default {
+  components:{
+    HeaderImage, 
+  },
+}
 
 </script>
 
 <template>
-    <h2>Kontakt</h2>
     <div>
+        <HeaderImage />
     </div>
 </template>
 
