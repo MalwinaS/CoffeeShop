@@ -1,12 +1,24 @@
+<script>
+import MenuLink from './components/MenuLink.vue'
+export default {
+  components:{
+    MenuLink, 
+  },
+}
+</script>
+
 <template>
   <div class="logo-image">
     <img alt="Vue logo" src="./assets/images/header/logo.png">
   </div>
-  <nav>
-    <router-link to="/">Strona główna</router-link> |
-    <router-link to="/store">Sklep</router-link> |
-    <router-link to="/events">Wydarzenia</router-link>
-  </nav>
+  <MenuLink />
+  <!-- <div class="main-menu">
+    <nav>
+      <router-link class="menu-link" to="/">Nasza palarnia</router-link>
+      <router-link class="menu-link" to="/store">Kup kawę</router-link>
+      <router-link class="menu-link" to="/contact">Kontakt</router-link>
+    </nav>
+  </div> -->
   <router-view/>
 </template>
 
@@ -30,18 +42,4 @@
   }
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: $color-primary;
-  font-size: $font-size-base;
-  text-decoration: none;
-}
-
-nav a.router-link-exact-active {
-  color: $color-green;
-}
 </style>
