@@ -1,12 +1,11 @@
 <script>
 import MenuLink from './components/MenuLink.vue'
 export default {
-  components: {
-    MenuLink 
+  components:{
+    MenuLink, 
   },
 }
 </script>
-
 
 <template>
   <div class="logo-image">
