@@ -9,8 +9,7 @@ export default {
 </script>
 
 <template>
-    <div class="about">
-      <h1>This is store</h1>
+    <div class="store">
     </div>
     <ProductsDashboard />
 </template>

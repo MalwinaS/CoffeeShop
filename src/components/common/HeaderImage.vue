@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 .header-image {
     height: 130px;
-  &__container{
+  &__container {
     grid-column: 1/-1;
     img {
       margin: 0 auto;
@@ -29,6 +29,7 @@ export default {
       height: 250px;
       @media only screen and (max-width: 992px) {
         height: 200px;
+        margin: 0 5px;
 	    }
     }
   }

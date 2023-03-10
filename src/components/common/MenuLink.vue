@@ -52,13 +52,15 @@ nav {
   grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   overflow: hidden;
-  margin: 0 20%;
+  margin: 0 auto;
+  max-width: 1180px;
 }
 nav a {
   font-weight: bold;
   color: $color-primary;
   font-size: $font-size-base;
   text-decoration: none;
+//   text-align: left;
 }
 nav a.router-link-exact-active {
   color: $color-green;

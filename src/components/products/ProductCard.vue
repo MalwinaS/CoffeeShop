@@ -8,14 +8,10 @@ defineProps({
 </script>
 
 <template>
-  <RouterLink
-    class="product-link"
-    :to="{ name: 'product-details', params: { id: product.id } }"
-  >
     <div class="product-card">
-      <h2>{{ product.title }}</h2>
+      <h2>{{ product.name }}</h2>
     </div>
-  </RouterLink>
+
 </template>
 
 <style scoped>

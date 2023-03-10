@@ -17,4 +17,3 @@ export default {
       return apiClient.get('/products/' + id)
     }
   }
-  
