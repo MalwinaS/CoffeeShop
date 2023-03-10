@@ -20,26 +20,31 @@ onMounted(() => {
 
 <template>
  <section class="products-dash grid-container">
-  <div class="products-dash__container">
-    <p class='products-dash__title'>Produkty naszej palarnii</p>
-  <div class="products">
+  <p class='products-dash__title'>Produkty naszej palarnii</p>
+  <div class="products-dash__items">
     <ProductCard v-for="product in products" :key="product.id" :product="product" />
   </div>
-</div>
+
 </section>
 </template>
 
 <style scoped lang="scss">
 .products-dash {
-  display: grid;
-  // flex-direction: column;
-  align-items: center;
-  &__title {
+    &__title {
     text-align: left;
     font-size: $font-size-small;
     font-weight: 500;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding: 10px;
+  }
+    &__items {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    overflow: hidden;
+    align-items: center;
   }
 }
 

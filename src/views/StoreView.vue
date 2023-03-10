@@ -9,7 +9,5 @@ export default {
 </script>
 
 <template>
-    <div class="store">
-    </div>
     <ProductsDashboard />
 </template>
