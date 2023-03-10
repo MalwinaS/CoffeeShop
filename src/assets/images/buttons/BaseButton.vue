@@ -1,7 +1,6 @@
 <script setup>
 import vue from 'vue';
 
-
 defineProps({
   label: {
     type: String,

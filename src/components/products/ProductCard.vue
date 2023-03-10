@@ -1,5 +1,6 @@
 <script setup>
 import BaseButton from '@/assets/images/buttons/BaseButton.vue'
+import IconZoom from '@/assets/images/icons/IconZoom.vue';
 
 defineProps({
   product: {
@@ -7,11 +8,17 @@ defineProps({
     required: true,
   },
 })
+
+function openModal() {
+  alert("ok")
+}
 </script>
 
 <template>
     <section class="product-card">
-      <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
+      <div class="product-card__icon">
+          <IconZoom @click="openModal" />
+      </div>
       <picture class="product-card__image">
           <img src="@/assets/images/product-images/box.png" alt='' loading='lazy'>
         </picture>
@@ -28,9 +35,16 @@ defineProps({
 <style scoped lang="scss">
 .product-card {
   padding: 20px;
-  width: 250px;
+  width: 240px;
   cursor: pointer;
   margin-bottom: 18px;
+  position: relative;
+
+  &__icon {
+   position: absolute;
+   right: 0;
+   cursor: pointer;
+  }
 
   &__name {
     font-size: 18px;
