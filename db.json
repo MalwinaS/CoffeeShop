@@ -15,6 +15,54 @@
         "price": 56.00,
         "title": "Become the best barista",
         "description": "Z nutą czekolady"
+      },
+      {
+        "id": 3,
+        "name": "Arabica",
+        "category": "drip",
+        "price": 59.00,
+        "title": "Become the best barista",
+        "description": "Kwaśna"
+      },
+      {
+        "id": 4,
+        "name": "Arabica i Robusta",
+        "category": "mokka",
+        "price": 56.00,
+        "title": "Become the best barista",
+        "description": "Z nutą czekolady"
+      },
+      {
+        "id": 5,
+        "name": "Arabica",
+        "category": "drip",
+        "price": 59.00,
+        "title": "Become the best barista",
+        "description": "Kwaśna"
+      },
+      {
+        "id": 6,
+        "name": "Arabica i Robusta",
+        "category": "mokka",
+        "price": 56.00,
+        "title": "Become the best barista",
+        "description": "Z nutą czekolady"
+      },
+      {
+        "id": 7,
+        "name": "Arabica",
+        "category": "drip",
+        "price": 59.00,
+        "title": "Become the best barista",
+        "description": "Kwaśna"
+      },
+      {
+        "id": 8,
+        "name": "Arabica i Robusta",
+        "category": "mokka",
+        "price": 56.00,
+        "title": "Become the best barista",
+        "description": "Z nutą czekolady"
       }
     ]
   }
