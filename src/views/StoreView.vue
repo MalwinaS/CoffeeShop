@@ -1,16 +1,16 @@
-<script setup>
-// import ProductsList from "@/components/products/ProductsList.vue";
+<script>
+import ProductsDashboard from "@/components/products/ProductsDashboard.vue";
 
-// export default {
-//   components:{
-//     ProductsList
-//   },
-// }
+export default {
+  components:{
+    ProductsDashboard
+  },
+}
 </script>
 
 <template>
     <div class="about">
       <h1>This is store</h1>
     </div>
-    <!-- <ProductsList /> -->
+    <ProductsDashboard />
 </template>
