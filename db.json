@@ -1,24 +1,18 @@
 {
     "events": [
       {
-        "id": 156,
-        "category": "coffee",
+        "id": 1,
+        "category": "drip",
+        "price": 59.00,
         "title": "Become the best barista",
-        "description": "Barista is a great occupation",
-        "location": "Coffee Store in Warsaw",
-        "date": "30 czerwiec 2023",
-        "time": "10:00",
-        "organizer": "Anna K."
+        "description": "Kwaśna"
       },
       {
-        "id": 456,
-        "category": "coffee",
+        "id": 2,
+        "category": "mokka",
+        "price": 56.00,
         "title": "Become the best barista",
-        "description": "Barista is a great occupation",
-        "location": "Coffee Store in Warsaw",
-        "date": "15 czerwiec 2023",
-        "time": "12:00",
-        "organizer": "Anna K."
+        "description": "Z nutą czekolady"
       }
     ]
   }
