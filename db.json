@@ -2,6 +2,7 @@
     "events": [
       {
         "id": 1,
+        "name": "Arabica",
         "category": "drip",
         "price": 59.00,
         "title": "Become the best barista",
@@ -9,6 +10,7 @@
       },
       {
         "id": 2,
+        "name": "Arabica i Robusta",
         "category": "mokka",
         "price": 56.00,
         "title": "Become the best barista",
