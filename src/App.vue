@@ -1,17 +1,17 @@
 <script>
 import MenuLink from './components/common/MenuLink.vue'
+import LogoImage from './components/common/LogoImage.vue'
 
 export default {
   components:{
     MenuLink, 
+    LogoImage
   },
 }
 </script>
 
 <template>
-  <div class="logo-image">
-    <img alt="Vue logo" src="./assets/images/header/logo.png">
-  </div>
+  <LogoImage />
   <MenuLink />
   <router-view/>
 </template>
@@ -23,17 +23,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $color-primary;
-}
-
-.logo-image {
-  padding: 20px;
-  img {
-    @include devices(tablet) {
-      padding: 0;
-      width: 220px;
-      height: auto;
-    }
-  }
 }
 
 </style>

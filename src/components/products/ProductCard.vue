@@ -14,7 +14,7 @@ defineProps({
 <template>
     <section class="product-card">
       <div class="product-card__icon">
-          <IconZoom @click="openModal"/>
+          <IconZoom @click="$openNav()"/>
       </div>
       <picture class="product-card__image">
           <img src="@/assets/images/product-images/box.png" alt='' loading='lazy'>
