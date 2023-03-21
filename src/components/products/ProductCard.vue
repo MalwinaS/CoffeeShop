@@ -1,32 +1,32 @@
-<script setup>
-import BaseButton from '@/assets/images/buttons/BaseButton.vue'
-import IconZoom from '@/assets/images/icons/IconZoom.vue';
-
-defineProps({
-  product: {
-    type: Object,
-    required: true,
+<script>
+import IconZoom from "@/assets/images/icons/IconZoom.vue";
+export default {
+  components: {
+    IconZoom,
   },
-})
-
+  props: {
+    product: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <template>
-    <section class="product-card">
-      <div class="product-card__icon">
-          <IconZoom @click="openModal"/>
-      </div>
-      <picture class="product-card__image">
-          <img src="@/assets/images/product-images/box.png" alt='' loading='lazy'>
-        </picture>
-      <p class="product-card__name">{{ product.name }}</p>
-        <div class="product-card__info">
-          <p class="product-card__info__price">{{ product.price }},00 zł</p>
-          <BaseButton 
-          label='Do koszyka'
-          />      
-        </div>
-      </section>
+  <section class="product-card">
+    <div class="product-card__icon">
+      <IconZoom @click="$openNav()" />
+    </div>
+    <picture class="product-card__image">
+      <img src="@/assets/images/product-images/box.png" alt="" loading="lazy" />
+    </picture>
+    <p class="product-card__name">{{ product.name }}</p>
+    <div class="product-card__info">
+      <p class="product-card__info__price">{{ product.price }},00 zł</p>
+      <BaseButton label="Do koszyka"></BaseButton>
+    </div>
+  </section>
 </template>
 
 <style scoped lang="scss">
@@ -38,9 +38,9 @@ defineProps({
   position: relative;
 
   &__icon {
-   position: absolute;
-   right: 0;
-   cursor: pointer;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
   }
 
   &__name {
@@ -72,5 +72,4 @@ defineProps({
   color: #2c3e50;
   text-decoration: none;
 } */
-
 </style>

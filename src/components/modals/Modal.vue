@@ -1,7 +1,4 @@
 <script>
-
-import BaseButton from '@/assets/images/buttons/BaseButton.vue'
-
 export default {
   props: ["modalActive"],
   setup(props, { emit }) {
@@ -22,7 +19,6 @@ export default {
 
           <slot />
           <button @click="close" type="button">close</button>
-         
         </div>
       </transition>
     </div>
@@ -65,7 +61,8 @@ export default {
     position: relative;
     max-width: 640px;
     width: 80%;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -1px rgba(0, 0, 0, 0.06);
     background-color: #fff;
     padding: 64px 16px;
     i {
