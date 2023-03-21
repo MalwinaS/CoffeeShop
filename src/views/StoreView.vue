@@ -1,15 +1,13 @@
 <script>
 import ProductsDashboard from "@/components/products/ProductsDashboard.vue";
 
-
 export default {
-  components:{
+  components: {
     ProductsDashboard,
-
   },
-}
+};
 </script>
 
 <template>
-    <ProductsDashboard />
+  <ProductsDashboard />
 </template>

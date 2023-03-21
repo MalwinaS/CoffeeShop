@@ -1,23 +1,30 @@
 <script>
 export default {
-  name: 'HeaderImage',
+  name: "HeaderImage",
 };
 </script>
 
 <template>
-    <section class="header-image grid-container">
-      <div class="header-image__container">
-        <picture>
-          <source srcset="@/assets/images/header/coffee-beans.jpg" media='(min-width: 1152px)'>
-          <img src="@/assets/images/header/coffee-beans.jpg" alt='' loading='lazy'>
-        </picture>
-      </div>
-    </section>
+  <section class="header-image grid-container">
+    <div class="header-image__container">
+      <picture>
+        <source
+          srcset="@/assets/images/header/coffee-beans.jpg"
+          media="(min-width: 1152px)"
+        />
+        <img
+          src="@/assets/images/header/coffee-beans.jpg"
+          alt=""
+          loading="lazy"
+        />
+      </picture>
+    </div>
+  </section>
 </template>
-  
+
 <style scoped lang="scss">
 .header-image {
-    height: 130px;
+  height: 130px;
   &__container {
     grid-column: 1/-1;
     img {
@@ -28,9 +35,8 @@ export default {
       @media only screen and (max-width: 992px) {
         height: 200px;
         margin: 0 5px;
-	    }
+      }
     }
   }
 }
 </style>
-  
