@@ -43,6 +43,12 @@ export default {
     cursor: pointer;
   }
 
+  &__image{
+    img {
+    width: 100%;
+    }
+  }
+
   &__name {
     font-size: 18px;
     text-align: left;
